@@ -7,12 +7,27 @@
     <packaging>pom</packaging>
     <name>Address Book Edureka Demo</name>
     <url>https://github.com/SeshagiriSriram/addressbook</url>
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>2.19.1</version>
-</dependency>
-    <properties>
+  <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <!-- To use the plugin goals in your POM or parent POM -->
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+	<version>2.19.1</version>
+      </plugin>
+    </plugins>
+  </build>	
+<properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
