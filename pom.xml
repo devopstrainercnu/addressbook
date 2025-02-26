@@ -14,7 +14,7 @@
 	      <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version> <!-- You can use a version based on your Maven setup -->
+                <version>3.3.1</version> <!-- You can use a version based on your Maven setup -->
                </plugin>
         <!-- To use the plugin goals in your POM or parent POM -->
     	      <plugin>
